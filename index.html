@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Parks</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Search National parks by state</h1>
+    <form>
+        <label for="state-1">Search by state</label>
+        <input id="js-state-1" type="text" name="state-1" required>
+
+        <label for="state-2">Add another state if you want</label>
+        <input id="js-state-2" type="text" name="state-2"> 
+
+        <label for="max-results">Maximum results to return</label>
+        <input id="js-max-results" type="text" name="max-results" value="10">
+
+        <input type="submit" value="Go">
+    </form>
+
+    <section id="results" class="hidden">
+        <h2>These are the parks in the state/s you searched in</h2>
+        <ul id="results-list">
+        </ul>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
